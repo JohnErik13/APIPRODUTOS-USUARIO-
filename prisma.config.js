@@ -3,12 +3,12 @@
 require('dotenv').config();
 const { defineConfig, env } = require('prisma/config');
 
-module.export = defineConfig({
+module.exports = defineConfig({
   schema: "prisma/schema.prisma",
   migrations: {
     path: "prisma/migrations",
   },
   datasource: {
-    url: env('DATABASE_URL'),
+    url: env("DATABASE_URL"),
   },
 });
