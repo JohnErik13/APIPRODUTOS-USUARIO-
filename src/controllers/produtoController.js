@@ -1,3 +1,4 @@
+const CategoriaModel = require('../models/categoriaModel');
 const produtoModel = require('../models/produtoModel');
 
 const produtoController = {
@@ -47,6 +48,10 @@ const produtoController = {
         }
         
     }
+        
+                           
+       
+    
 }
 module.exports = produtoController;
 

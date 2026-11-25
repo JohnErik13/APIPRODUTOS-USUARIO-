@@ -1,15 +1,16 @@
+
 const express = require('express');
 const router = express.Router();
 
 const produtoRoutes = require('./produtoRoutes');
-
-// Criando Rota para usuários
 const usuarioRoutes = require('./usuarioRoutes');
+const categoriaRoutes = require('./categoriaRoutes');
 
-// Associa o prefixo /produtos ao arquivo produtoRoutes
+// Associação das rotas
 router.use('/produtos', produtoRoutes);
 router.use('/usuario', usuarioRoutes);
+router.use('/categoria', categoriaRoutes);
 
-
-// Associação com a rota /usuarios
 module.exports = router;
+
+
