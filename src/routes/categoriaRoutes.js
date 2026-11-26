@@ -11,6 +11,7 @@ router.post('/novo', categoriaController.criarCategoria);
 //router.delete('/:codigo', categoriaController.deletarCategoria);
 router.put('/atualizar/:codigo', categoriaController.atualizarCategoria);
 router.delete('/excluir/:codigo', categoriaController.deletarCategoria);
+
 module.exports = router;
 
 
